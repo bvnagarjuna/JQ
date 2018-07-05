@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            debugger;
+            var grid = $('[id$=students]')[0];
+            //grid.rows[5].style.backgroundColor
+            $("#students tr").each((index, row) => {
+                $(row).css('background-color', 'pink');
+                //$(this).css('backgroundColor', '#EFEF00');
+
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <table id="students" style="width:70%">
+        <caption>Persons</caption>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <tr1>
+            <td>Ramesh</td>
+            <td>M</td>
+            <td>25</th>
+        </tr1>
+        <tr>
+            <td>Raju</td>
+            <td>M</td>
+            <td>32</th>
+        </tr>
+        <tr>
+            <td>Anji</td>
+            <td>M</td>
+            <td>35</th>
+        </tr>
+        <tr>
+            <td>Swathi</td>
+            <td>F</td>
+            <td>28</th>
+        </tr>
+        <tr>
+            <td>navya</td>
+            <td>F</td>
+            <td>22</th>
+        </tr>
+        <tr>
+            <td>Getha</td>
+            <td>F</td>
+            <td>19</th>
+        </tr>
+    </table>
+
+</body>
+
+</html>
